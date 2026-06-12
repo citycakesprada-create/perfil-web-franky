@@ -1,0 +1,277 @@
+/* PERFIL */
+.perfil{
+    background: rgb(192, 245, 200);
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.foto{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #28a745;
+    margin-bottom: 20px;
+}
+
+.perfil h1{
+    margin-bottom: 10px;
+    color: #187f18;
+}
+
+.rol{
+    color: rgb(4, 56, 19);
+    margin-bottom: 10px;
+}
+
+.descripcion{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* BOTONES */
+button{
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+button:hover{
+    background: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+section{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgb(163, 230, 139);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #187f18;
+}
+
+/* PERFIL PROFESIONAL */
+.perfil-profesional p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* SKILLS */
+.skill{
+    margin-bottom: 20px;
+}
+
+.skill p{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.barra{
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progreso{
+    height: 100%;
+    border-radius: 20px;
+}
+
+.html{
+    width: 40%;
+    background: #e9f412;
+}
+
+.css{
+    width: 40%;
+    background: #2b34de;
+}
+
+.js{
+    width: 30%;
+    background: #f52a06;
+}
+
+.ADSO{
+    width: 30%;
+    background: #2c0575;
+}
+
+/* ESTADISTICAS */
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat{
+    background: #28a745;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.stat h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* PROYECTOS */
+#contenedor-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-proyecto{
+    width: 250px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card-proyecto:hover{
+    transform: translateY(-5px);
+}
+
+.card-proyecto h3{
+    margin-bottom: 10px;
+    color: #187f18;
+}
+
+/* EXPERIENCIA */
+.card-exp{
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.card-exp h3{
+    margin-bottom: 10px;
+    color: #187f18;
+}
+
+/* CERTIFICADOS */
+.certificados{
+    text-align: center;
+}
+
+.certificado{
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.certificado i{
+    font-size: 35px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background: #187f18;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-col p{
+    margin: 8px 0;
+}
+
+.social-icons a{
+    color: white;
+    margin: 0 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: #c7ffc7;
+}
+
+/* MODO OSCURO */
+.dark{
+    background: #111;
+    color: white;
+}
+
+.dark section,
+.dark .perfil,
+.dark .card-proyecto,
+.dark .card-exp,
+.dark .certificado{
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark section h2,
+.dark .perfil h1,
+.dark .card-proyecto h3,
+.dark .card-exp h3{
+    color: #4cff7a;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .perfil{
+        width: 95%;
+    }
+
+    section{
+        width: 95%;
+    }
+
+    .stats{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
